@@ -18,3 +18,4 @@ react 路由 src/ui/router/router
 4 electron app
 	electron 运行本地app文件夹
 	查看本地的客户端页面样式 
+后期有时间会把打包和发布做了
