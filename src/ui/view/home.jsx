@@ -1,5 +1,7 @@
 import React from 'react';
-import Head from './head.jsx';
+import Sidernav from './Sidernav.jsx';
+import { Layout } from 'antd';
+const { Content } = Layout;
 class Home extends React.Component {
 	constructor(props){
     super(props);
@@ -12,10 +14,12 @@ class Home extends React.Component {
   }
     render() {
         return (
-            <div>
-              <Head title="home"/>
-              <li>{this.state.mode}</li>
-            </div>
+          <Layout style={{ minHeight: '100vh' }}>
+            <Sidernav></Sidernav>
+            <Content style={{ margin: '0 0' }}>
+              123
+            </Content>
+          </Layout>
         )
     }
 }

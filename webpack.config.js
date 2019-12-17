@@ -32,6 +32,9 @@ module.exports = {
                 // Options to configure babel with
                 query: {
                     presets: ['es2015', 'react'],
+                    plugins:[
+                        ['import', {libraryName: 'antd', style: 'css'}] //按需加载
+                    ],
                 }
             },
             { test: /\.css$/, loader: 'style-loader!css-loader' },

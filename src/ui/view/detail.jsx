@@ -1,5 +1,7 @@
 import React from 'react';
-import Head from './head.jsx';
+import Sidernav from './Sidernav.jsx';
+import { Layout, Icon } from 'antd';
+const { Header, Content } = Layout;
 class Detail extends React.Component {
 	constructor(props){
     super(props);
@@ -12,10 +14,14 @@ class Detail extends React.Component {
   }
     render() {
         return (
-            <div>
-              <Head title="detail"/>
-              <li>{this.state.mode}</li>
-            </div>
+          <div>
+          <Layout style={{ minHeight: '100vh' }}>
+            <Sidernav></Sidernav>
+              <Content>
+                    Content  my home  Detail
+              </Content>
+          </Layout>
+        </div>
         )
     }
 }

@@ -4,4 +4,4 @@ var ReactDOM = require('react-dom');
 var SecurityChooser = require('./router/router');
 
 
-ReactDOM.render(<SecurityChooser/>, document.getElementById('security'));
+ReactDOM.render(<SecurityChooser/>, document.getElementById('root'));
